@@ -1,6 +1,6 @@
 import React from "react";
 import { Text, View, StyleSheet, Image, FlatList, Pressable, ScrollView } from "react-native";
-import { Link } from "@react-navigation/native"; // Certifique-se de usar react-navigation
+import { Link } from "@react-navigation/native";
 
 const playlists = [
   { id: 0.1, title: "1990", imageUrl: "https://i.pinimg.com/736x/d7/4b/5b/d74b5be6457c9ccd01eaf616d5a3e4ed.jpg" },
@@ -74,7 +74,7 @@ const TelaHome = () => {
     <ScrollView style={styles.container}>
       <View style={styles.header}>
         <Image source={require('../../assets/images/logo.png')} style={styles.logo} />
-        <Text style={styles.title}>Bem-vindo ao Spotfake</Text>
+        <Text style={styles.title}>Bem-vindo ao Spotfake (ㅅ´ ˘ `)♡</Text>
         <Link to="/telaPerfil" style={styles.profileLink}>
           <Text style={styles.profileText}>Meu Perfil</Text>
           <Image source={require('../../assets/images/userIcon.png')} style={styles.profileImage} />
@@ -114,6 +114,8 @@ const styles = StyleSheet.create({
     fontSize: 32,
     fontWeight: "bold",
     color: "#FBB1BD",
+    width: 400,
+    textAlign: 'center'
   },
   profileLink: {
     backgroundColor: "#FBB1BD",

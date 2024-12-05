@@ -23,6 +23,7 @@ export default TelaCadastro = () => {
                 },
                 body: JSON.stringify({
                     "nome": name,
+                    "sobrenome": surname,
                     "email": email,
                     "nascimento": birthdate,
                     "senha": password
@@ -46,6 +47,7 @@ export default TelaCadastro = () => {
             <Text style={styles.title}>Crie sua conta</Text>
             <View style={styles.form}>
                 <InputPlace style={styles.inputs} value={name} onChangeTextHandler={setName} icon={"https://img.icons8.com/?size=100&id=98957&format=png&color=fbb1bd"} label={"Nome"} />
+                <InputPlace style={styles.inputs} value={surname} onChangeTextHandler={setSurName} icon={"https://img.icons8.com/?size=100&id=98957&format=png&color=fbb1bd"} label={"Sobrenome"} />
                 <InputPlace style={styles.inputs} value={email} onChangeTextHandler={setEmail} icon={"https://img.icons8.com/?size=100&id=jicLxt1sA2qa&format=png&color=fbb1bd"} label={"Email"} />
                 <InputPlace style={styles.inputs} value={birthdate} onChangeTextHandler={setBirthdate} icon={"https://img.icons8.com/?size=100&id=EPWi0qK2GM93&format=png&color=fbb1bd"} label={"Data de nascimento"} />
                 <InputPlace style={styles.inputs} value={password} onChangeTextHandler={setPassword} icon={"https://img.icons8.com/?size=100&id=85161&format=png&color=fbb1bd"} label={"Senha"} />

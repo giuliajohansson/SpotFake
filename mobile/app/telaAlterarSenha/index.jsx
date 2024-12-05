@@ -34,8 +34,12 @@ export default TelaLogin = () => {
         }
     }
     return (
+        
         <View style={styles.container}>
             <Text style={styles.title}>Altere Sua Senha</Text>
+            <Pressable onPress={() => router.replace("/telaHome")} style={styles.backButton}>
+                <Text style={styles.backText}>Voltar</Text>
+            </Pressable>
 
             <View style={styles.form}>
                 <View>
@@ -64,7 +68,7 @@ const styles = StyleSheet.create({
         color: "#FBB1BD"
     },
     button: {
-        backgroundColor: '#FBB1BD',
+        backgroundColor: '#ff85a1',
         width: 250,
         height: 40,
         display: 'flex',
@@ -73,8 +77,19 @@ const styles = StyleSheet.create({
         borderRadius: 5,
         marginTop: 20
     },
+    backButton: {
+        position: "absolute",
+        top: 20,
+        left: 10,
+        backgroundColor: "#FBB1BD",
+        padding: 10,
+        borderRadius: 5,
+    },
+    backText: {
+        color: "#fff",
+    },
     form: {
-        backgroundColor: '#ff85a1',
+        backgroundColor: '#FBB1BD',
         borderRadius: 7,
         width: 350,
         height: 270,

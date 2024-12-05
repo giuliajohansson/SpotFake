@@ -50,9 +50,9 @@ export default TelaLogin = () => {
         <View style={styles.container}>
             <Image source={require('../assets/images/logo.png')} style={styles.logo} />
 
-            <Text style={styles.title}>Bem-vindo!</Text>
-            <Text style={styles.subtitle}>Faça Login</Text>
+            <Text style={styles.title}>Spotfake ૮꒰ ˶ ༝ •˶꒱ა ♡</Text>
             <View style={styles.form}>
+            <Text style={styles.subtitle}>Faça Login</Text>
                 <InputPlace value={email} onChangeTextHandler={setEmail} icon={"https://img.icons8.com/?size=100&id=jicLxt1sA2qa&format=png&color=fbb1bd"} label={"Email"} />
                 <InputPlace value={password} onChangeTextHandler={setPassword} icon={"https://img.icons8.com/?size=100&id=85161&format=png&color=fbb1bd"} label={"Senha"} />
                 <Link href={"/telaCadastro"} style={styles.link}><Text style={styles.link_text}>Não possui uma conta? Cadastre-se</Text></Link>
@@ -75,19 +75,20 @@ const styles = StyleSheet.create({
     logo: {
         width: 50,
         height: 50,
-        marginBottom: -30,
+        marginBottom: -10,
+        marginTop: 5,
     },
     title: {
-        fontSize: 40,
+        fontSize: 35,
         fontWeight: 'bold',
         color: "#fbb1bd",
-        marginBottom: -20,
-        marginTop: -15,
+        marginBottom: -10,
+        marginTop: -5,
         width: 400,
         textAlign: 'center'
     },
     subtitle: {
-        fontSize: 35,
+        fontSize: 20,
         fontWeight: 'bold',
         color: "#ffffff",
         marginBottom: -20,
